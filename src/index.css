@@ -5,9 +5,94 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: wheat;
+  scroll-behavior: smooth;
+  
+}
+
+.heading {
+  color: red;
+  text-align: center;
+  margin: 20px ;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: rgb(22, 20, 20);
+  position: relative;
+  justify-content: center;
+
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.cards {
+  perspective: 1000px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  /* border: 2px solid blue; */
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 8px 10px 10px 5px lightblue;
+  transition: 0.07s;
+  cursor: pointer;
+
+}
+.cards :hover{
+transform: scale(1.1);
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+
+}
+
+.maincontiner {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.card_info {
+  text-align: center;
+  font-size: large;
+  border-radius: 15px;
+}
+
+.card_cateory {
+  text-align: center;
+  font-family: cursive;
+  margin: 10px;
+}
+.button{
+  background-color: #f61808;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 4px 3px 10px -2px rgb(112, 215, 121);
+  width: 150px;
+  font-size: medium;
+}
+.button:hover{
+  background-color: #2d100d;
 }
